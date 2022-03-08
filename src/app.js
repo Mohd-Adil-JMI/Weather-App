@@ -1,10 +1,11 @@
-const geoCode = require('./geoCode.js')
-const weather = require('./weather.js')
+const geoCode = require('./utils/geoCode')
+const weather = require('./utils/weather')
 const express = require("express")
+const path = require('path')
 const res = require('express/lib/response')
 const app = express()
-const port = process.env.PORT || 3000
-app.use(express.static("public"));
+const port = process.env.PORT
+app.use(express.static(path.join(__dirname,'./public')));
 
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
@@ -32,5 +33,5 @@ app.get('*', (req, res) => {
     res.send('Error|Page Not Found')
 })
 app.listen(port, () => {
-    console.log(`App listening at http://localhost:${port}`)
+    console.log(`App listening at ${port}`)
 })
