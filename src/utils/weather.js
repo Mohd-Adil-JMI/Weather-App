@@ -7,13 +7,7 @@ const weather = (latitude, longitude, callback) => {
             callback("Something went wrong check your internet connection",undefined)
         }
         else{
-            // const data={
-            //     temperature:response.body.current.temperature,
-            //     feelslike:response.body.current.feelslike,
-            //     description:response.body.current.weather_descriptions[0],
-            //     icon:response.body.current.weather_icons[0]
-            // }
-            const data=response.body.current
+            const data=response.body
             callback(undefined,data)
         }   
     });
