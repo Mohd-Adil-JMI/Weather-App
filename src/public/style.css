@@ -1,55 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
-*{
+
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    color:#a9bab8;
+    color: #fff;
 }
-h1{
+
+h1 {
     position: absolute;
     top: 12px;
     font-weight: lighter;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     min-width: 100vw;
     min-height: 100vh;
-    background: #313131;
+    background: url(./bgimage2.jpg) no-repeat center;
+    background-size: cover;
     align-items: center;
     padding: 48px;
     position: relative;
 }
-form{
+
+form {
     margin-top: 48px;
     margin-bottom: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#location{
+
+#location {
     margin-right: 12px;
     min-width: 128px;
     max-width: 248px;
     height: 48px;
     border: none;
     outline: none;
-    /* box-shadow: 2px 2px 8px #302e2b; */
     padding: 16px;
-    background: #525252;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
     border-radius: 48px;
     font-size: 1.2rem;
 }
-.location{
+
+.location {
     text-align: center;
     margin-bottom: 16px;
     font-weight: 100;
     text-transform: uppercase;
 }
-button,label{
+
+button,
+label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,15 +66,20 @@ button,label{
     height: 48px;
     margin-right: 8px;
     border-radius: 48px;
-    border:none;
-    background: #525252;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
-.hidden{
+
+.hidden {
     display: none;
 }
-.card{
+
+.card {
     width: 340px;
-    background:#525252;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,26 +88,30 @@ button,label{
     padding: 8px;
     margin-bottom: 12px;
 }
-img{
+
+img {
     margin: 12px;
     size: 32px;
     border-radius: 32px;
     box-shadow: 0px 4px 8px 0px black;
 }
-p{
-    /* font-size: 1.2rem; */
+
+p {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-p span{
+
+p span {
     font-size: 2rem;
 }
- p span sup{
-     font-size: 1.5rem;
- }
-footer{
+
+p span sup {
+    font-size: 1.5rem;
+}
+
+footer {
     position: absolute;
     bottom: 16px;
 }
